@@ -1,0 +1,76 @@
+
+/* Configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f1117;
+  color: #e5e7eb;
+}
+
+/* Contenedor principal */
+.app {
+  min-height: 100vh;
+  background: #0f1117;
+}
+
+/* Contenido */
+.contenido {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Secciones de bienvenida */
+.bienvenido {
+  background-color: #181b24;
+  border: 1px solid #292e3a;
+  border-radius: 14px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-top: 30px;
+  transition: border-color 0.3s ease;
+}
+
+.bienvenido:hover {
+  border-color: #3b82f6;
+}
+
+.bienvenido h1 {
+  color: #f9fafb;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.bienvenido p {
+  color: #9ca3af;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .bienvenido {
+    padding: 40px 20px;
+  }
+
+  .bienvenido h1 {
+    font-size: 1.7rem;
+  }
+
+  .bienvenido p {
+    font-size: 0.95rem;
+  }
+}
